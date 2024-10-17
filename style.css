@@ -1,1 +1,69 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
+/* Header styles */
+header {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px; /* Padding around header */
+    text-align: center; /* Center align text */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+}
+
+nav a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Photo gallery styles */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between images */
+    padding: 20px; /* Padding around the gallery */
+    max-width: 1200px; /* Max width for the gallery */
+    margin: 0 auto; /* Center the gallery */
+}
+
+.photo {
+    overflow: hidden; /* Prevent overflow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.photo img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block display */
+    object-fit: cover; /* Cover the area */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.photo img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Description section styles */
+.description {
+    padding: 20px; /* Padding around the section */
+    max-width: 800px; /* Max width for the description */
+    margin: 0 auto; /* Center the description 
