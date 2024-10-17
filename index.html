@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css"> <!-- Link to your stylesheet if needed -->
 </head>
 <body>
+    <div class="custom-cursor"></div>
     <header>
-        <h1>Breu + Eckmeier Architekten</h1>
+        <h1>breu + eckmeier Architekten</h1>
         <nav>
             <ul>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -39,5 +40,23 @@
     <footer>
         <p>&copy; 2024 Sepehr Hajimokhtar</p>
     </footer>
+    <script>
+        const cursorDot = document.querySelector('.custom-cursor');
+        const header = document.querySelector('header');
+    
+        document.addEventListener('mousemove', function(e) {
+            cursorDot.style.left = e.pageX + 'px';
+            cursorDot.style.top = e.pageY + 'px';
+        });
+    
+        header.addEventListener('mouseenter', function() {
+            cursorDot.style.backgroundColor = 'white'; // Change color to white on header hover
+        });
+    
+        header.addEventListener('mouseleave', function() {
+            cursorDot.style.backgroundColor = 'black'; // Change back to black when not hovering
+        });
+    </script>
+    
 </body>
 </html>
