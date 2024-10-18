@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    /* cursor: none !important; */
+    /* cursor: none !important; didnt work here so i use universal selector */
 }
 .custom-cursor {
     position: fixed; /* Use fixed to keep it in view */
