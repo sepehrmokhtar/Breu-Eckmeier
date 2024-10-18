@@ -1,6 +1,10 @@
 /* General styles */
 /* Custom pencil cursor */
 
+* {
+    cursor: none !important;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -8,18 +12,20 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    cursor: none; 
+    /* cursor: none !important; */
 }
 .custom-cursor {
-    position: absolute;
+    position: fixed; /* Use fixed to keep it in view */
     width: 10px; /* Adjust size as needed */
     height: 10px; /* Adjust size as needed */
-    background-color: black; /* Black color */
+    background-color: black; /* Default color */
     border-radius: 50%; /* Make it a circle */
     pointer-events: none; /* Prevent it from blocking clicks */
     transform: translate(-50%, -50%); /* Center the dot */
-    z-index: 9999; /* Bring the cursor to the front */
+    z-index: 9999; /* Ensure it appears above other elements */
+    display: block; /* Ensure it's displayed */
 }
+
 /* Navigation styles */
 nav ul {
     list-style-type: none; /* Remove bullets */
